@@ -1,0 +1,11 @@
+<section class="container forms">
+    <h1 class="titulo-gastos">Transferencias Recibidas</h1>
+
+    <app-tabla-transferencias [transferencias]="transferenciasRecibidas">
+    </app-tabla-transferencias>
+
+    <div class="trans-send-link">
+        <a class="link-enviado" routerLink="/pages/transferencias-enviadas">Transferencias Enviadas</a>
+        <a class="link-enviado" routerLink="/pages/nueva-transferencia">+Nueva Transferencia</a>
+    </div>
+</section>

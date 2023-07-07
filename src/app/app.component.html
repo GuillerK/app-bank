@@ -1,8 +1,15 @@
-<!-- comentario -->
-<nav class="main-menu">
-  <ul>
-    <li><a routerLink="/auth/login">Iniciar Sesión</a></li>
-    <li><a routerLink="/pages/dashboard">Dashboard</a></li>
-  </ul>
-</nav>
-<router-outlet></router-outlet>
+<div class="color-container">
+  <nav class="main-menu">
+    <ul>
+      <li><a class="menu-link" routerLink="/auth/login">Iniciar Sesión</a></li>
+
+      <li><a class="menu-link" routerLink="/pages/perfil">Perfil</a></li>
+
+      <li><a class="menu-link" routerLink="/pages/dashboard">Dashboard</a></li>
+
+      <li><a class="menu-link" routerLink="/pages/transferencias-recibidas">Transferencias</a></li>
+
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
