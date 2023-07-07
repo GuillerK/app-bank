@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ComponentesModule } from '../componentes/componentes.module';
 import { NuevaTransferenciaComponent } from './nueva-transferencia/nueva-transferencia.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { DetallesTransferenciasComponent } from './detalles-transferencias/detalles-transferencias.component';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { PerfilComponent } from './perfil/perfil.component';
     DashboardComponent, 
     TransferenciasRecibidasComponent, 
     TransferenciasEnviadasComponent, 
-    NuevaTransferenciaComponent, PerfilComponent],
+    NuevaTransferenciaComponent, PerfilComponent, DetallesTransferenciasComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

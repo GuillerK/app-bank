@@ -216,7 +216,7 @@
    column-gap: 30px;
  }
 
- .form {
+ .form{
    margin: auto;
    max-width: 430px;
    width: 100%;
@@ -225,6 +225,7 @@
    background: #FFF;
    margin-top: 150px;
  }
+
 
  .tabla-gastos .tabla-transferencias {
    max-width: 1080px;
@@ -494,6 +495,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
+  }
+
+  .dinero {
+    font-size: 70px;
   }
   
   .saldo { 

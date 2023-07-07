@@ -10,11 +10,10 @@ import { RouterModule } from '@angular/router';
     TablaTransferenciasComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule, RouterModule
   ],
   exports: [
     TablaTransferenciasComponent,
-    RouterModule
   ]
 })
 export class ComponentesModule { }

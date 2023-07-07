@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { transferenciasEnviadas } from 'src/app/auth/datos/transferenciasEnviadas-ejemplo';
 import { TransferenciaService } from 'src/app/services/transferencia/transferencia.service';
 import { ClienteService } from 'src/app/services/cliente/cliente.service';
 

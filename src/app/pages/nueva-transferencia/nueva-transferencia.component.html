@@ -1,25 +1,24 @@
-
-
 <section class="container forms">
-    <div *ngIf="mensaje" class="mensaje">{{ mensaje }}</div>
+    <!-- <div [(ngModel)]="nuevaTransferencia.feedback" class="mensaje"{{ feedback }}></div>
+    <div [(ngModel)]="nuevaTransferencia.feedback_error" class="mensaje">{{ feedback_error }}</div> -->
       <div class="form login">
             <div class="form-content">
                   <header>Rellena los datos</header>
                         <div class="field input-field">
-                              <input [(ngModel)]="id" type="number" name="id" placeholder="Beneficiario(ID)" required>
+                              <input [(ngModel)]="nuevaTransferencia.beneficiario.id" type="number" name="id" placeholder="Beneficiario(ID)" required>
                         </div>
                         <div class="field input-field">
-                              <input [(ngModel)]="importe" type="number" name="importe" placeholder="Importe" required>
+                              <input [(ngModel)]="nuevaTransferencia.importe" step="0.01" type="number" name="importe" placeholder="Importe" required>
                         </div>
                         <div class="field input-field">
-                        <input type="text" name="concepto" placeholder="Concepto">
+                        <input [(ngModel)]="nuevaTransferencia.concepto" type="text" name="concepto" placeholder="Concepto">
                         </div>
 
                         <div class="field button-field">
                               <button type="button" (click)="enviarTransferencia()">Enviar</button>
                         </div>
-                        <div class="field button-field">      
-                              <button type="button" (click)="borrarFormulario()">Borrar</button>
+                        <div class="trans-send-link">
+                           
                         </div>
             </div>
       </div>

@@ -12,6 +12,9 @@ export class LoginComponent {
   email: string = "";
   password: string = "";
 
+
+  
+
   constructor(private clienteService: ClienteService, private router: Router) {
 
   }
@@ -46,4 +49,6 @@ export class LoginComponent {
         }
       );
   }
+
+
 }

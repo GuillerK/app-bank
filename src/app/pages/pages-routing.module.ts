@@ -5,11 +5,15 @@ import { TransferenciasRecibidasComponent } from './transferencias-recibidas/tra
 import { TransferenciasEnviadasComponent } from './transferencias-enviadas/transferencias-enviadas.component';
 import { NuevaTransferenciaComponent } from './nueva-transferencia/nueva-transferencia.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { DetallesTransferenciasComponent } from './detalles-transferencias/detalles-transferencias.component';
+import { RegistroClienteNuevoComponent } from './registro-cliente-nuevo/registro-cliente-nuevo.component';
+import { loginGuard } from '../guards/login.guard';
 
 const routes: Routes = [
   {
     path: "dashboard",
     component: DashboardComponent,
+    canActivate: [loginGuard]
   },
   {
     path: "",
@@ -32,6 +36,14 @@ const routes: Routes = [
     path: "perfil",
     component: PerfilComponent,
   },
+  {
+    path: "transferencias/:id",
+    component: DetallesTransferenciasComponent,
+  },
+  {
+    path: "registro-cliente-nuevo",
+    component: RegistroClienteNuevoComponent,
+  }
 ];
 
 @NgModule({

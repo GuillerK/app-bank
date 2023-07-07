@@ -13,12 +13,20 @@ obtenerTransferencias() {
   return this.http.get(this.urlApi)
 }
 
+obtenerTransferenciasPorId(id: number) {
+  return this.http.get(this.urlApi + "/"+ id)
+}
+
 obtenerTransferenciaPorOrdenante(idOrdenante: number) {
   return this.http.get(this.urlApi + "/ordenante/" + idOrdenante)
 }
 
 obtenerTransferenciaPorBeneficiario(idBeneficiario: number) {
   return this.http.get(this.urlApi + "/beneficiario/" + idBeneficiario)
+}
+
+guardar(transferencia: any) {
+  return this.http.post(this.urlApi, transferencia)
 }
 
 }

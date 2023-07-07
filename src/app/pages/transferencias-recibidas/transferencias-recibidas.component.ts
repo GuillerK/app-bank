@@ -42,6 +42,5 @@ cargarTransferenciasRecibidas() {
   } else {
     console.log("no hay cliente");
   }
-
 }
 }

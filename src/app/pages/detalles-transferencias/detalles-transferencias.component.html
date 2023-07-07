@@ -1,0 +1,14 @@
+
+<section class="container forms">
+    <h1 class="titulo-gastos">Detalles</h1>
+    <div class="background" *ngIf="transferenciaDetalle">
+    <article class="fila-tabla cursor-pointer">
+        <div>Transferencia de {{transferenciaDetalle.ordenante.usuario}}</div>
+        <div>Para {{transferenciaDetalle.beneficiario.usuario}}</div>
+        <div>Importe {{transferenciaDetalle.importe  | currency: "EUR"}}</div>
+        <div>Realizada en {{transferenciaDetalle.fecha | date: "short"}}</div>
+    </article>
+    </div>
+        
+
+</section>

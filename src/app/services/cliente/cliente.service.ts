@@ -59,4 +59,8 @@ export class ClienteService {
     sessionStorage.removeItem("sesion");
   }
 
+  guardar(cliente: any) {
+    return this.http.post(this.urlApi, cliente);
+  }
+
 }

@@ -17,18 +17,29 @@
             </article>
         </div>
         <div class="saldo-container">
-            <div class="saldo">
+        <div class="saldo">
                 <h3>Saldo Actual:</h3>
-                <p *ngIf="saldo">{{cliente.saldo}}€</p>
-
-                <div>
-                    <img src>
-                </div>
-            </div>
-            <div class="img">
-                <h3>Saldo Actual:</h3>
-                <p>3.478 </p>
-            </div>
+                <p class="dinero" *ngIf="saldo">{{cliente.saldo}}€</p>
         </div>
+        <div class="saldo-container">
+            <div class="saldo">
+                  <h2>Rellena los datos</h2>
+                        <div class="field input-field">
+                              <input [(ngModel)]="password" type="text" name="id" placeholder="Nueva Contraseña" required>
+                        </div>
+                        <div class="field input-field">
+                              <input [(ngModel)]="password2" type="text" name="password" placeholder="Repetir Contraseña" required>
+                        </div>
+                        <div class="field button-field">
+                              <button type="button" (click)="modificarLogin()">Enviar</button>
+                        </div>
+            </div>
+            <div class="field button-field">
+                <button (click)="cerrarSesion()">Cerrar Sesion</button>
+            </div>
+      </div>
+
     </div>
+    </div>
+    
 </section>
